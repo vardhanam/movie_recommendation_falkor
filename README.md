@@ -3,7 +3,7 @@ Link to medium [article](https://medium.com/stackademic/how-to-build-a-movie-rec
 
 # IMDB Movie Analysis and Question-Answering System
 
-This Jupyter Notebook provides a detailed example of how to use Docker to run a Redis database, install various Python packages for data handling and machine learning, and set up a question-answering system using FalkorDB, LangChain, and Gradio.
+This Jupyter Notebook provides a detailed example of how to use Docker to run a FalkorDB database, install various Python packages for data handling and machine learning, and set up a question-answering system using FalkorDB, LangChain, and Gradio.
 
 ## Getting Started
 
@@ -15,7 +15,7 @@ Ensure you have Docker installed on your system to run the FalkorDB container. Y
 
 Run the following command to start the FalkorDB in a Docker container:
 ```bash
-!docker run -p 6379:6379 -it --rm falkordb/falkordb
+!docker run -p 6379:6379 -p 3000:3000 -it --rm falkordb/falkordb
 ```
 
 ### Installation
